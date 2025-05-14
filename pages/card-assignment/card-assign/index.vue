@@ -48,10 +48,9 @@ const showModalDeleteForm = ref({
      </nuxt-link>
 
      <nuxt-link to="/card-assignment/card-assign/uploadcardassign">
-     <rs-button class="px-5" variant="warning">
-            <Icon name="" class="mr-1" />
-              Excel upload
-            </rs-button>   
+      <rs-button class="px-5" variant = "warning">
+        Excel Upload
+      </rs-button>
      </nuxt-link>
   </div>
 
