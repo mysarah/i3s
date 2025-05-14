@@ -41,14 +41,15 @@ const showModalDeleteForm = ref({
  <!-- BUTTON ADD CARD -->
   <div class="flex justify-end mb-2">
    <nuxt-link to="/card-assignment/card-assign/add-card-assign">
-     <rs-button class="mb-4" variant="warning">
+     <rs-button class="mx-5 px-5" variant="warning">
             <Icon name="fe:plus" class="mr-1" />
               Assign New Card
             </rs-button>
      </nuxt-link>
+
      <nuxt-link to="/card-assignment/card-assign/uploadcardassign">
-     <rs-button class="mb-4" variant="warning">
-            <Icon name="fe:plus" class="mr-1" />
+     <rs-button class="px-5" variant="warning">
+            <Icon name="" class="mr-1" />
               Excel upload
             </rs-button>
      </nuxt-link>
