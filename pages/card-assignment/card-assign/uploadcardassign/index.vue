@@ -105,7 +105,7 @@ const form = ref ({
     class="flex-wrap justify-between p-5 bg-white text-black rounded-md flex-col"
   >
     <template #header>
-      <div class="flex">List of Student</div>
+      <div class="flex">List of Card Assignment</div>
     </template>
 
     <!-- TABLE LIST STUDENT -->
