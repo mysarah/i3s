@@ -4,6 +4,38 @@ definePageMeta({
   
 });
 
+  const field = [
+    "Id",
+    "CardNumber",
+    "Nric",   
+    "Status",
+    "Action",
+  ]
+
+const data = [
+    // {
+    //   id: 1,
+    //   cardNumber: "202100002222",
+    //   nric: 1200,   
+    //   status: "Active",
+    //   action: "",
+    // },
+    // {
+    //   id: 2,
+    //   cardNumber: "202100002230",
+    //   nric: 1200,  
+    //   status: "Active",
+    //   action: "",
+    // },
+    // {
+    //   id: 3,
+    //   cardNumber: "202100002245",
+    //   nric: 1200,   
+    //   status: "Active",
+    //   action: "",
+    // },
+  ]
+
   const school = [
     { label: "Choose school", value: null },
     { label: "School 1", value: "School 1" },
@@ -19,14 +51,14 @@ definePageMeta({
   ]
 
 const form = ref ({
-    cardassign_doc = "",
-    user_role = "",
-    school_name = "",
+    cardassign_doc : "",
+    user_role : "",
+    student_school : "",
 })
+
 </script>
 
-<template>
- 
+<template> 
 
   <!-- UPLOAD DOC -->
   <rs-card class="flex-wrap justify-between p-5 bg-white text-black rounded-md flex-col" >
@@ -96,9 +128,9 @@ const form = ref ({
         </p>
       </template>
 
-      <template v-slot:FullName="data" >
+      <template v-slot:CardNumber="data" >
         <p class="">
-          {{ data.value.fullname }}
+          {{ data.value.cardNumber }}
         </p>
       </template>
 
@@ -106,13 +138,7 @@ const form = ref ({
         <p class="">
           {{ data.value.nric }}
         </p>
-      </template>
-
-      <template v-slot:WalletNumber="data" >
-        <p class="">
-          {{ data.value.walletNo }}
-        </p>
-      </template>
+      </template>      
 
       <template v-slot:Status="data" >
         <rs-badge variant="success" v-if="data.value.status == 'Active'">Aktif</rs-badge>
