@@ -84,7 +84,7 @@ const form = ref ({
           <div class="basis-1/2">
           <FormKit type="select" label="User Role" :options="userRole" validation="required|length:0,200" v-model="form.user_role" >
             <template #label>
-            <label class="formkit-label text-gray-700 dark:text-gray-200 block mb-2 font-semibold text-sm formkit-invalid:text-red-500">Class <span class="text-danger">*</span></label>
+            <label class="formkit-label text-gray-700 dark:text-gray-200 block mb-2 font-semibold text-sm formkit-invalid:text-red-500">User Role <span class="text-danger">*</span></label>
             </template>
           </FormKit>
         </div>
