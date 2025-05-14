@@ -4,6 +4,20 @@ definePageMeta({
   
 });
 
+  const school = [
+    { label: "Choose school", value: null },
+    { label: "School 1", value: "School 1" },
+    { label: "School 2", value: "School 2" },
+    { label: "School 3", value: "School 3" }
+  ]
+
+  const userRole = [
+    { label: "Choose role", value: null },
+    { label: "Student", value: "Student" },
+    { label: "Staff", value: "Staff" }
+   
+  ]
+
 const form = ref ({
     cardassign_doc = "",
     user_role = "",
@@ -29,12 +43,7 @@ const form = ref ({
           </div>
           <div class="basis-1/2 mr-5">
             <FormKit 
-              type="select" 
-              label="School Name"
-              :options="school"
-              validation="required|length:0,200"
-              v-model="form.student_school"
-            >
+              type="select" label="School Name" :options="school" validation="required|length:0,200" v-model="form.student_school" >
               <template #label>
               <label class="formkit-label text-gray-700 dark:text-gray-200 block mb-2 font-semibold text-sm formkit-invalid:text-red-500">School Name <span class="text-danger">*</span></label>
               </template>
@@ -51,9 +60,9 @@ const form = ref ({
       </FormKit>
     </div>
     
-     <rs-button variant="warning" class="w-68" style="margin-left: 9%;">Update</rs-button> 
+     <rs-button variant="warning" class="w-68" style="margin-left: 9%;">Upload</rs-button> 
       &nbsp;&nbsp;&nbsp;
-     <nuxt-link :to="`/usermanagement/student`">    
+     <nuxt-link :to="`/card_assignment/card_assign`">    
         <rs-button variant="primary" class="w-68" style="margin-left: 2%;margin-top: -4.6%;">Cancel</rs-button>
      </nuxt-link>
 
