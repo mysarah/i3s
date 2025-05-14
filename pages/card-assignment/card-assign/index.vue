@@ -46,6 +46,12 @@ const showModalDeleteForm = ref({
               Assign New Card
             </rs-button>
      </nuxt-link>
+     <nuxt-link to="/card-assignment/card-assign/uploadcardassign">
+     <rs-button class="mb-4" variant="warning">
+            <Icon name="fe:plus" class="mr-1" />
+              Excel upload
+            </rs-button>
+     </nuxt-link>
   </div>
 
 <rs-card class="flex-wrap justify-between p-5 bg-white text-black rounded-md flex-col"> 
